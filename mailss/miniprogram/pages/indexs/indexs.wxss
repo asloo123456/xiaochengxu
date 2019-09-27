@@ -1,0 +1,84 @@
+/* pages/indexs/indexs.wxss */
+/* 子元素 */
+.swiper-item{display: block;}
+/* 图片 */
+.slide-image {width: 100%;}
+/* lunbo父元素 */
+swiper {width: 100%;}
+/* 导航栏 */
+/* 最大父元素 */
+.category {padding: 15px 0 10px 0;overflow: auto;background-color: #FFF;margin-bottom: 10px;}
+/* 循环体 */
+.category_item { width: 25%;float: left;margin-bottom: 10px;}
+
+.icon_wrap {width: 40px;margin: 0 auto;margin-bottom: 5px;}
+/* 图标大小 */
+.index_icon {width: 40px; height: 40px;}
+/* 文字大小 */
+.category_item_text {text-align: center;font-size: 13px;color: #737373;}
+/* 图片区域 */
+.singal_item {
+  text-align: center;
+  background-color: #FFF;
+  margin-bottom: 10px;
+}
+.singal_item_title {
+  padding: 12px;
+  font-size: 16px;
+}
+.singal_item_image {
+  line-height: 0;
+}
+/* 底部区域 */
+.commen_title {
+  padding: 10px;
+  background-color: #fff;
+  font-size: 16px;
+  border-bottom: 1px solid #E9E9E9;
+}
+.single_goods_image {
+  width: 80px;
+  height: 80px;
+}
+.single_goods {
+  position: relative;
+  height: 100px;
+  background-color: #FFF;
+  padding-left: 100px;
+  border-bottom: 1px solid #E7E7EB;
+}
+.single_image_wrap {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.single_goods_infor {
+  padding: 10px 0;
+  position: relative;
+  height: 80px;
+}
+.single_goods_name {
+  font-size: 14px;
+}
+.single_goods_price {
+  font-size: 14px;
+  color: #FF1493;
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  width: 100%;
+  height: 22px;
+  line-height: 22px;
+}
+.single_goods_address {
+  color: #929292;
+  font-size: 12px;
+}
+.carImgWrap {
+  float: right;
+  margin-right: 15px;
+}
+.carImg {
+  width: 20px;
+  height: 20px;
+}

@@ -1,0 +1,35 @@
+<!-- 轮播 -->
+<view>
+  <swiper indicator-dots="{{indicatorDots}}" 
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"
+    circular="{{circular}}">
+    <block wx:for="{{imgUrls}}" wx:key="key">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<!--  -->
+<view class="goods_infor_top">
+  <view class="goods_title">
+    木村耀司登山旅行大学生户外情侣双肩背包外带小背包
+    <view class="goods_collect_btn" bindtap="collect">
+      <view wx:if="{{iscollect}}">
+        <image src="../../images/icon-aixin.png" class="goods_collect_img"></image>
+      </view>
+      <view wx:else>
+        <image src="../../images/icon-aixin1.png" class="goods_collect_img"></image>
+      </view> 
+      <text wx:if="{{iscollect}}">已收藏</text>
+      <text wx:else>收藏</text>
+    </view>
+  </view>
+  <view class="goods_price">
+    <text>¥169</text>
+    <text class="goods_old_price">¥269</text>
+  </view>
+  <view class="goods_deliver">
+    *本产品由 品牌商 提供发货服务。
+  </view>
+</view>

@@ -1,4 +1,6 @@
 // pages/faxian/faxian.js
+// 引入图片自适应文件
+var WxAutoImage = require('../../js/wxAutoImageCal.js');
 Page({
 
   /**
@@ -6,6 +8,11 @@ Page({
    */
   data: {
 
+  },
+  // 使用自定义图片自适应
+  cusImageLoad: function (e) {
+    var that = this;
+    that.setData(WxAutoImage.wxAutoImageCal(e));
   },
 
   /**

@@ -1,4 +1,6 @@
 // pages/spdetail/spdetail.js
+// 引入图片自适应文件
+var WxAutoImage = require('../../js/wxAutoImageCal.js');
 Page({
 
   /**
@@ -15,8 +17,17 @@ Page({
     interval: 3000,//切换时间
     duration: 1200,//延迟时间
     circular: true,//衔接图片
-    iscollect: true,
+    iscollect: false,  //切换图片
     
+  },
+  // 点击触发
+  collect: function () {
+    this.setData({iscollect: !this.data.iscollect})
+  },
+  // 调用图片自适应
+  cusImageLoad: function (e) {
+    var that = this;
+    that.setData(WxAutoImage.wxAutoImageCal(e));
   },
 
   /**

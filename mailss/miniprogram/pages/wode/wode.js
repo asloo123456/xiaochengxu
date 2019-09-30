@@ -6,13 +6,26 @@ Page({
    */
   data: {
 
+      userInfo: {},
+      mode: ['我的收藏', '我的订单', '我的地址', '联系客服', '关于我们']
+   
   },
-
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    var that = this;
+    wx.login({
+      success: function () {
+        wx.getUserInfo({
+          success: function (res) {
+            that.setData({
+              userInfo: res.userInfo
+            })
+          }
+        })
+      }
+    });
   },
 
   /**

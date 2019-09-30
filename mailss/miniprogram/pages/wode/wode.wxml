@@ -1,2 +1,15 @@
-<!--pages/wode/wode.wxml-->
-<text>pages/wode/wode.wxml</text>
+<view class="personal_info">
+	<view class="photo_wrap">
+		<image src="{{userInfo.avatarUrl}}" class="photo"></image>
+	</view>
+	<view class="nickname">
+		{{userInfo.nickName}}
+	</view>
+</view>
+<view class="wode_item_wrap">
+	<view class="wode_item" wx:for="{{mode}}" wx:key="key">
+		{{item}}
+		<image src="../../images/icon-arrow.png" class="arrow_wrap"></image>
+	</view>
+</view>
+<view class="wode_out">退出</view>

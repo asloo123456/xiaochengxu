@@ -65,5 +65,10 @@ Page({
     }).then(res=>{
       console.log(res)
     }).catch(err=>{console.log(err)})
-  },  
+  },
+  goCart(){
+    wx.switchTab({
+      url: '/pages/xiaoxi/xiaoxi',
+    })
+  }  
 })

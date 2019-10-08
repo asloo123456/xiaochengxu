@@ -1,19 +1,28 @@
+/* 设置父元素 */
 .personal_info {
-	padding: 20px 0;
+  width: 100%;height: 400rpx;
+  text-align: center;
 	background-color: #FFF;
+  position: relative;
 }
+/* 头像居中显示 */
 .photo_wrap {
-	text-align: center;
+  position: absolute;
+  width: 200rpx;
+  height: 200rpx;
+  display: block;
+  overflow: hidden;
+  border-radius:50%; 
+  left: 50%;
+  transform: translate(-50%,100rpx)
 }
-.photo {
-	width: 90px;
-	height: 90px;
-	border-radius: 90px;
-}
+/* 昵称的显示区域 */
 .nickname {
-	margin-top: 15px;
-	text-align: center;
 	color: #696969;
+  position: absolute;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%,100rpx)
 }
 .wode_item_wrap {
 	background-color: #FFF;

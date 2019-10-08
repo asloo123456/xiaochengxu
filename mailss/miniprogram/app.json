@@ -3,9 +3,21 @@
     "pages/indexs/indexs",
     "pages/faxian/faxian",
     "pages/xiaoxi/xiaoxi",
-    "pages/wode/wode",
-    "pages/spdetail/spdetail",
-    "pages/pay/pay"
+    "pages/wode/wode"
+  ],
+  "subPackages": [
+    {
+      "root": "packageA",
+      "pages": [
+        "spdetail/spdetail"
+      ]
+    },
+    {
+      "root": "packageB",
+      "pages": [
+        "pay/pay"
+      ]
+    }
   ],
   "window": {
     "backgroundColor": "#F6F6F6",

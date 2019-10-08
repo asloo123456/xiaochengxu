@@ -1,13 +1,9 @@
 // 引入图片自适应文件
 var WxAutoImage = require('../../js/wxAutoImageCal.js');
 const db = wx.cloud.database({
-  env: "web-test-qq-01-wz9t3"//写env表示指定环境id
+  env: "web-test-qq-01-wz9t3"
 });
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
     imgUrls: [
       '../../images/swiper1.jpg',
@@ -27,7 +23,7 @@ Page({
   jumpProduct(e){
     var data = e.currentTarget.dataset;
     wx.navigateTo({
-      url: '/pages/spdetail/spdetail?id=' +data.id 
+      url: '/packageA/spdetail/spdetail?id=' +data.id 
     })
   },
   // 使用自定义图片自适应

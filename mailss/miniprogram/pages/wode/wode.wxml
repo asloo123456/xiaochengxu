@@ -1,9 +1,9 @@
 <view class="personal_info">
 	<view class="photo_wrap">
-		<image src="{{userInfo.avatarUrl}}" class="photo"></image>
+		<open-data type="userAvatarUrl"></open-data>
 	</view>
 	<view class="nickname">
-		{{userInfo.nickName}}
+		<open-data type="userNickName"></open-data>
 	</view>
 </view>
 <view class="wode_item_wrap">

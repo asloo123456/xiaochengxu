@@ -49,19 +49,11 @@
     <!-- 页面链接 -->
     <!-- 缓存商品id -->
       <view bindtap="jumpProduct" data-id="{{products._id}}">
-        <view class="single_goods_name">
-          <text>{{products.text}}</text>
-        </view>
+        <view class="single_goods_name"><text>{{products.text}}</text></view>
         <view class="single_goods_address">
           <text>{{products.city}}</text>
-        </view>
-        <view class="single_goods_price">
+        </view><view class="single_goods_price">
           <text>¥{{products.price}}</text>
           <view class="carImgWrap">
-            <image src="{{products.image}}" class="carImg"></image>
-          </view>
-        </view>
-      </view>
-    </view>
-  </view>
+            <image src="{{products.image}}" class="carImg"></image></view></view></view></view></view>
 </view>

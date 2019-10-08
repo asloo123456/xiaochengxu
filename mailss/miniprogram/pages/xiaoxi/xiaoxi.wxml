@@ -1,5 +1,4 @@
 <view>
-
     <!-- 循环商品 -->
     <view class="car_item_wrap" wx:for="{{carArray}}" wx:if="{{item.carShow}}"   wx:key="key">
         <view class="car_image_wrap">
@@ -19,7 +18,6 @@
         </view>
     </view>
 </view>
-
 <view class="car_bot">
 	<view class="car_bot_wrap">
 		总价

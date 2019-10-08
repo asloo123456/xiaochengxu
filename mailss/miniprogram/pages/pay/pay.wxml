@@ -17,26 +17,21 @@
 		<span class="table_goods_num">数量</span>
 		<span class="table_goods_con">总价</span>
 	</view>
-	<view class="table_content">
-		<view class="table_content_item">
-			<span class="table_goods_name">木村耀司登山旅行大学生户外情侣双肩背包外带小背包</span>
-			<span class="table_goods_num">10</span>
-			<span class="table_goods_con">¥1920.00</span>
-		</view>
-		<view class="table_content_item">
-			<span class="table_goods_name">木村耀司登山旅行大学生户外情侣双肩背包外带小背包</span>
-			<span class="table_goods_num">10</span>
-			<span class="table_goods_con">¥1920.00</span>
+	<view class="table_content" >
+		<view class="table_content_item" wx:for="{{carArray}}" wx:key="key">
+			<span class="table_goods_name">{{item.carTitle}}</span>
+			<span class="table_goods_num">{{item.carNum}}</span>
+			<span class="table_goods_con">¥{{item.carPrice*item.carNum}}</span>
 		</view>
 	</view>
 </view>
 <view class="pay_remarks">
-	<input placeholder="填写备注" type="text" />
+	<van-field placeholder="填写备注"></van-field>
 </view>
 <view class="car_bot">
 	<view class="car_bot_wrap">
 		总价
 		<span class="car_order_confirm" bindtap="toPay">前往支付</span>
-		<span class="car_total_money">¥579.00</span>
+		<span class="car_total_money">¥{{totalPrice}}</span>
 	</view>
 </view>

@@ -47,20 +47,21 @@
     </view>
     <view class="single_goods_infor">
     <!-- 页面链接 -->
-      <navigator url="../spdetail/spdetail">
+    <!-- 缓存商品id -->
+      <view bindtap="jumpProduct" data-id="{{products._id}}">
         <view class="single_goods_name">
-          <text>木村耀司登山旅行大学生户外情侣双肩背包外带小背包</text>
+          <text>{{products.text}}</text>
         </view>
         <view class="single_goods_address">
-          <text>诸暨</text>
+          <text>{{products.city}}</text>
         </view>
         <view class="single_goods_price">
-          <text>¥169.00</text>
+          <text>¥{{products.price}}</text>
           <view class="carImgWrap">
-            <image src="../../images/car.png" class="carImg"></image>
+            <image src="{{products.image}}" class="carImg"></image>
           </view>
         </view>
-      </navigator>
+      </view>
     </view>
   </view>
 </view>

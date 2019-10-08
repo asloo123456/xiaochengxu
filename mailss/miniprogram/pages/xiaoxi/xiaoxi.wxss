@@ -87,25 +87,10 @@
     color: #FF0000;
     margin-left: 5px;
 }
-.car_list_bot {
-    background-color: #FFF;
-    padding: 10px;
-    font-size: 14px;
-    height: 25px;
-    line-height: 25px;
-    padding-right: 50px;
-    text-align: right;
-    position: relative;
-    color: #929292;
-}
-.arrow_wrap {
-    position: absolute;
-    width: 50px;
-    height: 45px;
-    right: 0;
-    top: 0;
-    background-size: 16px;
-}
-.red {
-    color: #FF0000;
+
+/* 购物车空空如也 */
+.delAfter{
+  text-align: center;
+  margin-top: 100px;
+  color: rgb(231, 67, 67);
 }

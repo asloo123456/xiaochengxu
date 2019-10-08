@@ -119,6 +119,7 @@ swiper {
   line-height: 50px;
   text-align: center;
   color: #FFF;
+  cursor:pointer;
 }
 .red {
   background-color: #FFA500;
